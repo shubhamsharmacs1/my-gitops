@@ -13,6 +13,8 @@ spec:
       labels:
         app: nginx
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: starbucks
           image: shubhamsharma01/starbucks:latest
